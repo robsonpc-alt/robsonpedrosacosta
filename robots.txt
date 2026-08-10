@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://robsonpc-alt.github.io/robsonpedrosacosta/sitemap.xml
