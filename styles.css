@@ -303,3 +303,173 @@
   .approved-focus .focus-card{grid-template-columns:68px 1fr}
   .approved-feature .feature-row{align-items:flex-start}
 }
+
+
+/* =========================================================
+   FINAL APPROVED HOME — V6
+   Exact map+portrait crop from the user-approved prototype.
+   ========================================================= */
+.site-header{position:sticky;top:0;z-index:100;background:#fbf8f2;}
+.header-inner{
+  width:min(1680px,96vw);
+  max-width:none;
+  min-height:94px;
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.brand-rpc-only{flex:0 0 auto;}
+.brand-rpc-only .monogram{
+  color:#b68228;
+  font-size:44px;
+  line-height:1;
+  padding-right:22px;
+  border-right:1px solid rgba(182,130,40,.55);
+}
+.nav{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:nowrap!important;
+  white-space:nowrap;
+  gap:26px;
+  font-family:var(--serif);
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:0;
+  text-transform:uppercase;
+}
+.nav a{
+  display:inline-block;
+  white-space:nowrap!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  line-height:1;
+  padding:38px 0 31px;
+}
+
+.approved-hero{
+  position:relative;
+  height:470px;
+  min-height:470px;
+  overflow:hidden;
+  background:#f0e7d7;
+}
+.approved-hero-map{
+  position:absolute;
+  inset:0;
+  background-image:url('approved-hero-reference.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  transform:none!important;
+  filter:none!important;
+}
+.approved-hero-wash{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,
+      rgba(250,247,240,1) 0%,
+      rgba(250,247,240,.995) 15%,
+      rgba(250,247,240,.96) 24%,
+      rgba(250,247,240,.78) 31%,
+      rgba(250,247,240,.33) 40%,
+      rgba(250,247,240,.04) 49%,
+      rgba(250,247,240,0) 56%);
+}
+.approved-hero-inner{
+  width:min(1680px,96vw);
+  max-width:none;
+  height:100%;
+  margin:0 auto;
+  position:relative;
+  z-index:3;
+}
+.approved-copy{
+  position:absolute;
+  left:0;
+  top:0;
+  width:35%;
+  height:100%;
+  padding:42px 0 30px 22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  z-index:5;
+}
+.approved-copy h1{
+  margin:0 0 14px;
+  color:#102b49;
+  font-weight:500;
+  line-height:.98;
+  letter-spacing:-.02em;
+  text-transform:none;
+}
+.approved-copy h1 span{
+  display:block;
+  font-size:48px;
+}
+.approved-copy h1 span + span{margin-top:6px;}
+.approved-copy .rule{
+  width:56px;height:2px;margin:0 0 18px;background:#b68228;
+}
+.approved-copy h2{
+  font-size:24px;
+  line-height:1.28;
+  color:#9a6921;
+  margin:0 0 20px;
+}
+.approved-copy p{
+  font-size:16px;
+  line-height:1.55;
+  max-width:420px;
+  margin:0 0 22px;
+}
+.btn-navy{width:max-content;padding:13px 22px;}
+
+.approved-focus .focus-grid{width:min(1460px,95vw);max-width:none;}
+.approved-focus .focus-card{
+  min-height:230px;
+  grid-template-columns:74px 1fr;
+  gap:18px;
+  padding:30px 28px 28px;
+}
+.approved-focus .focus-card h3{
+  font-size:23px;
+  line-height:1.08;
+  margin-bottom:12px;
+}
+.approved-focus .focus-card p{
+  font-size:15px;
+  line-height:1.5;
+}
+
+.approved-feature{padding:36px 0 32px;}
+.approved-feature .feature-row{width:min(1460px,94vw);max-width:none;}
+.approved-feature h2{font-size:33px;margin:5px 0 8px;}
+.approved-feature p{font-size:15px;line-height:1.5;}
+
+.site-footer .container{width:min(1460px,94vw);max-width:none;}
+
+@media (max-width:1400px){
+  .header-inner{gap:20px}
+  .nav{gap:18px;font-size:12px}
+  .brand-rpc-only .monogram{font-size:40px;padding-right:18px}
+}
+@media (max-width:1150px){
+  .nav{gap:14px;font-size:11px}
+  .approved-copy{width:42%}
+  .approved-copy h1 span{font-size:44px}
+}
+@media (max-width:760px){
+  .approved-hero{height:auto;min-height:720px}
+  .approved-hero-map{background-position:60% center}
+  .approved-copy{
+    width:100%;
+    position:relative;
+    padding:48px 6vw 36px;
+  }
+  .approved-copy h1 span{font-size:43px}
+}

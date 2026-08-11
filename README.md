@@ -33,3 +33,7 @@ No `assets` folder is required.
 - `atlantic-hero.svg`
 - `robson-photo.jpg`
 - `CV_Robson_Pedrosa_Costa.docx`
+
+
+## V6
+Home hero updated from the final user-approved prototype. The cathedral is no longer visible; map and portrait come from `approved-hero-reference.jpg`. Navigation is forced to remain on one line on desktop.
