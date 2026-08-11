@@ -1,1 +1,1 @@
-const b=document.querySelector('.menu-btn');if(b){b.addEventListener('click',()=>{const n=document.querySelector('.top nav')||document.querySelector('.nav-links');if(n)n.classList.toggle('open');});}
+const btn=document.querySelector('.menu-btn');const nav=document.querySelector('.nav');if(btn&&nav){btn.addEventListener('click',()=>nav.classList.toggle('open'));}

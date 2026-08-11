@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1">
+      <stop offset="0" stop-color="#efe7d8"/>
+      <stop offset="0.5" stop-color="#f5efe4"/>
+      <stop offset="1" stop-color="#e9dfcf"/>
+    </linearGradient>
+    <pattern id="grid" width="90" height="90" patternUnits="userSpaceOnUse">
+      <path d="M90 0H0V90" fill="none" stroke="#9c8460" stroke-width="1" opacity=".15"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <rect width="1200" height="760" fill="url(#grid)" opacity=".7"/>
+  <!-- latitude / longitude arcs -->
+  <g fill="none" stroke="#9d835a" stroke-width="1.2" opacity=".22">
+    <path d="M120 0 Q410 380 120 760"/><path d="M310 0 Q520 380 310 760"/>
+    <path d="M500 0 Q600 380 500 760"/><path d="M700 0 Q650 380 700 760"/>
+    <path d="M900 0 Q760 380 900 760"/><path d="M1080 0 Q860 380 1080 760"/>
+    <path d="M0 180 Q600 80 1200 180"/><path d="M0 330 Q600 250 1200 330"/>
+    <path d="M0 500 Q600 420 1200 500"/><path d="M0 650 Q600 590 1200 650"/>
+  </g>
+  <!-- South America, abstract historical outline -->
+  <path d="M285 95 C245 112 222 152 210 196 C198 244 220 286 241 325 C263 365 261 405 280 446 C302 495 340 526 358 571 C373 611 360 652 382 704 C405 680 426 645 438 603 C452 554 475 522 501 478 C520 447 523 408 507 374 C493 344 467 321 459 287 C449 245 457 195 430 158 C402 121 356 91 320 84 Z" fill="#c7b28b" opacity=".32" stroke="#7d6746" stroke-width="2"/>
+  <!-- Brazil highlight -->
+  <path d="M311 246 C345 232 390 238 425 262 C444 287 448 323 438 358 C422 399 390 428 353 438 C320 423 291 396 276 361 C269 320 279 278 311 246 Z" fill="#c3a56d" opacity=".22" stroke="#8f6d36" stroke-width="1.5"/>
+  <!-- Africa, abstract -->
+  <path d="M830 85 C790 95 751 119 724 157 C697 196 690 239 706 281 C725 330 770 351 789 389 C811 433 805 485 829 532 C855 584 895 632 928 684 C952 648 973 603 981 556 C990 506 978 459 998 420 C1018 381 1050 348 1056 304 C1063 254 1041 205 1007 170 C966 127 912 94 864 84 Z" fill="#c7b28b" opacity=".30" stroke="#7d6746" stroke-width="2"/>
+  <path d="M742 316 C778 303 820 310 851 333 C872 352 880 381 876 414" fill="none" stroke="#a67c3e" stroke-width="2" opacity=".45"/>
+  <!-- Atlantic label -->
+  <text x="610" y="325" text-anchor="middle" font-family="Georgia,serif" font-size="44" letter-spacing="11" fill="#23354e" opacity=".78">ATLANTIC</text>
+  <text x="610" y="375" text-anchor="middle" font-family="Georgia,serif" font-size="44" letter-spacing="11" fill="#23354e" opacity=".78">OCEAN</text>
+  <text x="356" y="470" text-anchor="middle" font-family="Georgia,serif" font-size="24" letter-spacing="5" fill="#6f5634" opacity=".72">BRAZIL</text>
+  <text x="894" y="294" text-anchor="middle" font-family="Georgia,serif" font-size="24" letter-spacing="5" fill="#6f5634" opacity=".68">AFRICA</text>
+  <!-- compass -->
+  <g transform="translate(605 150)" opacity=".38" stroke="#6f5634" fill="none">
+    <circle r="46"/><circle r="9"/><path d="M0-62L8-10 0 0 -8-10Z" fill="#8b6a37"/><path d="M0 62L8 10 0 0 -8 10Z"/><path d="M-62 0L-10 8 0 0 -10-8Z"/><path d="M62 0L10 8 0 0 10-8Z"/>
+  </g>
+  <!-- ship -->
+  <g transform="translate(615 525)" stroke="#6f5634" stroke-width="3" fill="none" opacity=".55">
+    <path d="M-46 28 Q0 48 46 28 L34 48 H-34Z" fill="#927140" opacity=".3"/>
+    <path d="M0-68V28M0-58L-38-15H0ZM6-52L40-8H6Z"/>
+    <path d="M-64 58 Q0 42 64 58" stroke-width="2"/>
+  </g>
+  <!-- manuscript strokes -->
+  <g fill="none" stroke="#6e5234" stroke-width="2" opacity=".18" filter="url(#soft)">
+    <path d="M500 610 C560 574 618 590 676 560 S790 526 845 551"/>
+    <path d="M478 642 C552 604 622 625 690 594 S806 566 875 590"/>
+    <path d="M530 680 C596 644 665 657 729 628 S825 611 903 632"/>
+  </g>
+</svg>
