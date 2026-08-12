@@ -473,3 +473,40 @@
   }
   .approved-copy h1 span{font-size:43px}
 }
+
+/* FINAL USER-APPROVED DESIGN — V7 */
+.site-header{position:sticky;top:0;z-index:100;background:#fbf8f2;border-bottom:1px solid rgba(182,130,40,.18);}
+.header-inner{width:min(1720px,96vw);max-width:none;min-height:86px;display:flex;align-items:center;gap:26px;}
+.brand-rpc-only{flex:0 0 auto}
+.brand-rpc-only .monogram{color:#b68228;font-size:42px;line-height:1;padding-right:22px;border-right:1px solid rgba(182,130,40,.55);}
+.nav{margin-left:auto;display:flex;align-items:center;justify-content:flex-end;flex-wrap:nowrap!important;white-space:nowrap!important;gap:25px;font-family:var(--serif);font-size:13px;font-weight:600;letter-spacing:0;text-transform:uppercase;}
+.nav a{display:inline-block;white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important;line-height:1!important;padding:34px 0 28px;}
+
+.approved-hero{position:relative;height:430px;min-height:430px;overflow:hidden;background:#f2e9db;}
+.approved-hero-map{position:absolute;inset:0;background-image:url('approved-hero-v7.jpg');background-repeat:no-repeat;background-size:cover;background-position:center center;transform:none!important;filter:none!important;}
+.approved-hero-wash{position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,247,240,1) 0%,rgba(250,247,240,.998) 14%,rgba(250,247,240,.96) 23%,rgba(250,247,240,.82) 30%,rgba(250,247,240,.40) 38%,rgba(250,247,240,.10) 46%,rgba(250,247,240,0) 55%);}
+.approved-hero-inner{width:min(1720px,96vw);max-width:none;height:100%;margin:0 auto;position:relative;z-index:3;}
+.approved-copy{position:absolute;left:0;top:0;width:36%;height:100%;padding:38px 0 28px 22px;display:flex;flex-direction:column;justify-content:center;z-index:5;}
+.approved-copy h1{margin:0 0 13px;color:#102b49;font-weight:500;line-height:.98;letter-spacing:-.02em;text-transform:none;}
+.approved-copy h1 span{display:block;font-size:46px;}
+.approved-copy h1 span + span{margin-top:5px}
+.approved-copy .rule{width:54px;height:2px;margin:0 0 17px;background:#b68228;}
+.approved-copy h2{font-size:23px;line-height:1.28;color:#9a6921;margin:0 0 18px;}
+.approved-copy p{font-size:15.5px;line-height:1.52;max-width:410px;margin:0 0 20px;}
+.btn-navy{width:max-content;padding:12px 20px;}
+
+.approved-focus .focus-grid{width:min(1480px,95vw);max-width:none;}
+.approved-focus .focus-card{min-height:220px;grid-template-columns:72px 1fr;gap:18px;padding:28px 28px 26px;}
+.approved-focus .focus-card h3{font-size:22px;line-height:1.08;margin-bottom:11px;}
+.approved-focus .focus-card p{font-size:14.5px;line-height:1.5;}
+
+.approved-feature{padding:34px 0 30px;}
+.approved-feature .feature-row{width:min(1480px,94vw);max-width:none;}
+.approved-feature h2{font-size:32px;margin:5px 0 8px;}
+.approved-feature p{font-size:15px;line-height:1.5;}
+.site-footer .container{width:min(1480px,94vw);max-width:none;}
+.narrow-section{width:min(920px,92vw);margin:0 auto;}
+
+@media (max-width:1450px){.nav{gap:18px;font-size:12px}.brand-rpc-only .monogram{font-size:38px;padding-right:17px}}
+@media (max-width:1180px){.nav{gap:13px;font-size:10.5px}.approved-copy{width:42%}.approved-copy h1 span{font-size:42px}}
+@media (max-width:760px){.approved-hero{height:auto;min-height:700px}.approved-hero-map{background-position:62% center}.approved-copy{width:100%;position:relative;padding:46px 6vw 36px}.approved-copy h1 span{font-size:42px}}

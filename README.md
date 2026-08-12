@@ -37,3 +37,11 @@ No `assets` folder is required.
 
 ## V6
 Home hero updated from the final user-approved prototype. The cathedral is no longer visible; map and portrait come from `approved-hero-reference.jpg`. Navigation is forced to remain on one line on desktop.
+
+## V7 final approved package
+- Uses the final user-selected homepage visual.
+- Hero map+portrait asset: `approved-hero-v7.jpg`.
+- No cathedral in the hero.
+- Desktop navigation is kept on one line.
+- About no longer duplicates Awards & Honors; awards remain on the dedicated Awards page.
+- CSS/JS references use `?v=7` to reduce browser-cache issues.
