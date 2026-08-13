@@ -539,3 +539,8 @@
     aspect-ratio: 2.95 / 1;
   }
 }
+
+/* V9: keep complete approved Atlantic composition; never crop Brazil with cover */
+.approved-hero{height:458px!important;min-height:458px!important;aspect-ratio:auto!important;background:#f7f0e4!important}
+.approved-hero-map{background-image:url('approved-hero-v9.jpg')!important;background-size:100% 100%!important;background-position:center!important;background-repeat:no-repeat!important;transform:none!important;filter:none!important}
+@media(max-width:760px){.approved-hero{height:700px!important;min-height:700px!important}.approved-hero-map{background-size:auto 100%!important;background-position:center!important}}
