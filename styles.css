@@ -510,3 +510,32 @@
 @media (max-width:1450px){.nav{gap:18px;font-size:12px}.brand-rpc-only .monogram{font-size:38px;padding-right:17px}}
 @media (max-width:1180px){.nav{gap:13px;font-size:10.5px}.approved-copy{width:42%}.approved-copy h1 span{font-size:42px}}
 @media (max-width:760px){.approved-hero{height:auto;min-height:700px}.approved-hero-map{background-position:62% center}.approved-copy{width:100%;position:relative;padding:46px 6vw 36px}.approved-copy h1 span{font-size:42px}}
+
+
+/* =========================================================
+   V8 — HERO CROPPING FIX ONLY
+   Preserve Brazil + Atlantic + Africa + portrait.
+   ========================================================= */
+
+.approved-hero-map{
+  background-image:url('approved-hero-v8.jpg') !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+
+/* Keep the hero at the approved desktop proportion so "cover"
+   does not zoom into Africa on wide screens. */
+@media (min-width:761px){
+  .approved-hero{
+    height:auto !important;
+    min-height:0 !important;
+    aspect-ratio: 2.91 / 1;
+  }
+}
+
+/* On very wide screens, cap the visual height to avoid vertical zoom. */
+@media (min-width:1700px){
+  .approved-hero{
+    aspect-ratio: 2.95 / 1;
+  }
+}

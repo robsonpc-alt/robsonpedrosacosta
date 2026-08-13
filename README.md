@@ -45,3 +45,12 @@ Home hero updated from the final user-approved prototype. The cathedral is no lo
 - Desktop navigation is kept on one line.
 - About no longer duplicates Awards & Honors; awards remain on the dedicated Awards page.
 - CSS/JS references use `?v=7` to reduce browser-cache issues.
+
+## V8 — map cropping fix
+The previous V7 package cropped the approved hero image too far to the right before using CSS `background-size: cover`. That excluded much of Brazil/South America and made Africa dominate the published hero.
+
+V8 fixes only that implementation error:
+- crop begins farther left, preserving Brazil + Atlantic + Africa + portrait;
+- desktop hero uses an aspect ratio close to the approved prototype;
+- no new prototype or redesign was created;
+- CSS/JS use `?v=8` to avoid browser cache.
