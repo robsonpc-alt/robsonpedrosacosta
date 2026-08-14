@@ -1,56 +1,19 @@
 # Robson Pedrosa Costa — Academic Website
 
-Final package implementing the user-approved August 2026 design.
+## Final approved layout package — v10
 
-## Publish on the existing GitHub Pages repository
+This package is prepared for GitHub Pages and contains a locked homepage implementation based on the approved visual reference.
 
-Repository: `robsonpedrosacosta`
+### Upload
+Upload all files directly to the root of the existing `robsonpedrosacosta` repository.
 
-1. Open the repository on GitHub.
-2. Choose **Add file → Upload files**.
-3. Upload **all files from this folder directly to the repository root**.
-4. Commit the changes.
-5. Keep GitHub Pages configured as:
-   - Source: Deploy from a branch
-   - Branch: `main`
-   - Folder: `/(root)`
+GitHub Pages settings remain:
+- Source: Deploy from a branch
+- Branch: `main`
+- Folder: `/(root)`
 
-No `assets` folder is required.
+### Maintenance
+Read `GUIA_LAYOUT_APROVADO_PT-BR.md` before changing the homepage design.
 
-## Main files
-
-- `index.html` — Home
-- `about.html`
-- `research.html`
-- `publications.html`
-- `projects.html`
-- `awards.html`
-- `digital-humanities.html`
-- `cv.html`
-- `contact.html`
-- `styles.css`
-- `main.js`
-- `atlantic-hero.svg`
-- `robson-photo.jpg`
-- `CV_Robson_Pedrosa_Costa.docx`
-
-
-## V6
-Home hero updated from the final user-approved prototype. The cathedral is no longer visible; map and portrait come from `approved-hero-reference.jpg`. Navigation is forced to remain on one line on desktop.
-
-## V7 final approved package
-- Uses the final user-selected homepage visual.
-- Hero map+portrait asset: `approved-hero-v7.jpg`.
-- No cathedral in the hero.
-- Desktop navigation is kept on one line.
-- About no longer duplicates Awards & Honors; awards remain on the dedicated Awards page.
-- CSS/JS references use `?v=7` to reduce browser-cache issues.
-
-## V8 — map cropping fix
-The previous V7 package cropped the approved hero image too far to the right before using CSS `background-size: cover`. That excluded much of Brazil/South America and made Africa dominate the published hero.
-
-V8 fixes only that implementation error:
-- crop begins farther left, preserving Brazil + Atlantic + Africa + portrait;
-- desktop hero uses an aspect ratio close to the approved prototype;
-- no new prototype or redesign was created;
-- CSS/JS use `?v=8` to avoid browser cache.
+### Commit message
+`Lock approved homepage layout v10`
